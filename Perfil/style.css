@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    display: block;
+}
+a {
+    width: 100px;
+    height: 50px;
+    margin: 0 50px;
+}
+.text{
+    padding: 5px;
+    margin: 1% 1%;
+    display: flex; /* Usa flexbox para alinear contenido */
+    align-items: center; /* Centrar contenido verticalmente */
+}
+.text span{
+    flex: 1; /* Ocupa el espacio restante */
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+.text img{
+    max-width: 80px; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 0px; /* Espacio a la izquierda de la imagen */
+}
+.contenedor {
+    background-color: gray; /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajustar imagen al tamaño del contenedor */
+    background-position: center; /* Posición centrada */
+    position: relative;
+    height: 100vh; /* Altura total de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Color del texto para mejor visibilidad */
+    font-size: 20px; /* Tamaño de fuente */
+}
+/* .fondo-opaco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px);
+} */
+.contenido{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    z-index: 1;
+    margin: 5% 5%;
+    height: 80%;
+    padding: 5px;
+    text-align: justify;
+}
+.buttons {
+    width: 80%;
+    margin: 5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons button{
+    display: inline-flex; /* Para alinear elementos internos */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff; /* Color de fondo del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición para hover */
+}
+.buttons svg {
+    width: 24px; /* Tamaño del SVG */
+    height: 24px;
+    fill: currentColor; /* Relleno del SVG con el color del texto */
+    margin-right: 5px; /* Espacio entre SVG y texto */
+}
+
+.buttons button:hover{
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
