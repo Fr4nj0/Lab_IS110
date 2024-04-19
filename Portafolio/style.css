@@ -1,0 +1,230 @@
+/* Efectos Globales */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: darkgray; */
+    background-image: url(./url.png);
+    background-size: auto;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 60px;
+}
+
+.proyectos img:hover, .conocimientos img:hover {
+    transform: scale(1.2);
+}
+
+.conocimientos img:hover + h3,.proyectos img:hover + a, .proyectos img:hover + p{
+    transform: translateY(10px);
+}
+
+.title2 {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.white {
+    filter: invert(1) sepia(1) hue-rotate(180deg);
+}
+/* Configuracion para divs de contenido */
+
+/* .home, .proyectos, .contacto {
+    display: grid;
+    place-items: center;
+} */
+
+/* NavBar Header */
+
+.header {
+    width: 100%;
+    height: 40px;
+    /* background-color: gray; */
+    backdrop-filter: blur(10px);
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid lightslategray;
+}
+
+.header ul {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.header li {
+    margin: 8px 40px;
+}
+
+.header a:hover {
+    color: rgb(197, 197, 197);
+}
+
+.name {
+    margin: 8px;
+    width: 40%;
+}
+
+/* Bloque de Contenido Home */
+.title {
+    margin: 80px auto auto auto;
+    display: block;
+    text-align: left;
+    width: 80%;
+}
+
+.home {
+    width: 80%;
+    height: 10rem;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.home p {
+    width: 35rem;
+    text-align: justify;
+}
+
+.autor {
+    text-align: center;
+    width: 30%;
+    height: 120px;
+}
+
+.autor img{
+    width: 100px;
+    height: 120px;
+    border-radius: 90%;
+}
+
+.autor p {
+    width: 100%;
+    text-align: center;
+}
+
+/* Bloque de contenido .conocimientos */
+
+.conocimientos {
+    width: 50%;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.conocimientos ul {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.conocimientos li {
+    padding: 10px 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 30%;
+    width: 10%;
+}
+
+.conocimientos li img {
+    width: 84px;
+    height: 84px;
+}
+
+/* Bloque de contenido Proyectos */
+
+.proyectos {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.proyectos ul {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.proyectos li {
+    width: 30%;
+}
+
+.proyectos img {
+    width: 60px;
+    height: 60px;
+}
+
+.proyectos a:hover {
+    text-decoration: underline;
+}
+
+/* Bloque de contacto */
+.footer {
+    width: 100%;
+    height: 150px;
+    padding: 0px 0 10px 0;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.title3 {
+    margin: 20px auto;
+    display: block;
+    text-align: left;
+    width: 90%;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 90%;
+    margin: auto;
+}
+
+.contacto div {
+    display: flex;
+    height: 30px;
+}
+
+.contacto p {
+    margin: auto auto auto 5px;
+}
+
+.contacto img {
+    width: 25px;
+    height: 25px;
+}
