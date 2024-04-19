@@ -217,7 +217,7 @@ img {
     margin: auto auto auto auto;
 }
 
-.contacto div {
+.contacto a {
     display: flex;
     height: 30px;
 }
@@ -229,4 +229,8 @@ img {
 .contacto img {
     width: 25px;
     height: 25px;
+}
+
+.contacto a:hover {
+    color: rgb(171, 171, 171);
 }
